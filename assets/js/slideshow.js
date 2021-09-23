@@ -1,6 +1,6 @@
 window.setInterval(function(){
 slideshow();
-}, 1000);
+}, 5000);
 
 var imgCount = 0;
 var dir = 'assets/img/';

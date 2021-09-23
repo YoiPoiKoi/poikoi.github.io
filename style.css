@@ -24,7 +24,9 @@ p {
     background-position: 0 15%;
     height: 150px; 
 }
-
+#profile img{
+    background-image: url("assets/img/profile.png");
+}
 .header{
 
 }

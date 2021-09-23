@@ -3,7 +3,7 @@ slideshow();
 }, 1000);
 
 var imgCount = 0;
-var dir = 'file:///C:/Users/Brendon/Desktop/github/PKWebpage/assets/img/';
+var dir = 'assets/img/';
 var images = ['banner1.png', 'banner2.png', 'banner3.png','banner4.png'];
 
 function slideshow() {

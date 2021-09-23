@@ -17,3 +17,14 @@ body {
 p {
     margin: 0;
 }
+
+#banner{
+    background-image: url('assets/img/banner4.png'); 
+    background-size: cover;
+    background-position: 0 15%;
+    height: 150px; 
+}
+
+.header{
+
+}

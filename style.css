@@ -19,7 +19,6 @@ p {
 }
 #card {
     max-width: 30rem;
-    padding: 0 20px 15px;
     margin: 0 auto;
 }
 
@@ -28,7 +27,7 @@ p {
 }
 #banner {
     position: relative;
-    background-image: url('assets/img/banner1.png');
+    background-image: url('assets/img/banner4.png');
     background-size: cover;
     background-position: 0 15%;
     height: 150px;
@@ -43,6 +42,7 @@ p {
 
 #profile, #profile img {
 }
+
 @media only screen and (min-width: 600px) {
     #profile, #profile img {
     position: absolute;
@@ -67,45 +67,37 @@ p {
 } 
 #card {
     max-width: 90%;
-    padding: 0 20px 0px;
-        margin: 0 auto;
+    position: center;
         border: 1px solid #cecece;
         box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
         background: white;
         border-radius: 10px;
-        margin: 15px auto;
-        position: relative;
         z-index: -1;
-
+}
+    #cardText {
+    position: center;
+    text-align: center;
+    font-size: 9px;
+    color: #87B6D3;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
 }
 #cardBar {
     background: #e9f6fd;\
     height: 25px;
-        width: -webkit-fill-available;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        left: 0;
         margin: 0 auto;
-        position: absolute;
 
-        z-index: 1;
+        z-index: 0;
         
 
 }
-    }
-    #cardText {
-    display: initial;
-    position: center;
-    text-align: center;
-    font-size: 9px;
-    margin-left: 15px;
-    margin-top: 8px;
-    color: #87B6D3;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
- }
+    
  #links {
-padding: 10px 10px;
+    position: relative;
+padding: 30px 10px;
 }
  .link {
     font-family: var(--font);
@@ -119,7 +111,7 @@ padding: 10px 10px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 10px 10px; /* 17px */
     text-decoration: none;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
@@ -138,7 +130,7 @@ padding: 10px 10px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 10px 10px; /* 17px */
     text-decoration: none;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
@@ -147,13 +139,13 @@ padding: 10px 10px;
     display: inline-block;
 }
  #profile, #profile img {
-    top: 6%;
+    top: 5%;
     z-index: 1;
 }
 
  #header {
     position: center;
-    padding: 10% 0 0;
+    padding: 0 0 0;
 
 } 
 .headerName {
@@ -180,14 +172,7 @@ padding: 10px 10px;
     text-decoration: none;
     color: #87B6D3;
 }
-.headerText {
-    font-size: 2rem;
 }
-}
-
-.headerName {
-    
-} 
 
 #header {
     padding: 30% 0 0;
@@ -196,12 +181,11 @@ padding: 10px 10px;
 
 .dek {
     position: relative;
-    padding-top: 5px;
+    padding-top: 10px;
     width: 100%;
     margin: 0 auto;
 }
-.link {
-}  
+
 
 #links {
 }

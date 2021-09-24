@@ -33,7 +33,7 @@ p {
     background-image: url('assets/img/banner.png'); 
     background-size: cover;
     background-position: 0 15%;
-    height: 250px;
+    height: 300px;
 }
 
 #profile{
@@ -183,7 +183,7 @@ p {
 
 @media only screen and (min-height: 1081px){
     #banner{
-        height: 500px;
+        height: 450px;
     }
     #profile{
         bottom: -200px;

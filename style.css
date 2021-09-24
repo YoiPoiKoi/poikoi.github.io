@@ -57,7 +57,7 @@ p {
 
 #card {
     max-width: 30rem;
-    margin: 5px auto;
+    margin: 5px 15px;
     border: 1px solid #cecece;
     box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
     background: white;

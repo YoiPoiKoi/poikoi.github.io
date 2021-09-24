@@ -41,8 +41,8 @@ p {
     left: 50%;
     transform: translate(-50%, 0);
     bottom: -73px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border: 3px solid white;
     display: block;
     margin: 35px auto 20px;
@@ -184,6 +184,11 @@ p {
     #banner{
         height: 300px;
     }
+    #profile{
+        bottom: -80px;
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media only screen and (min-height: 1080px){
@@ -207,16 +212,16 @@ p {
         margin-top: 150px;
         font-size: 6rem;
     }
-    .link{
-        font-size: 5rem;
+    /*.link{
+        font-size: 3rem;
         padding: 5px 100px;
         margin: 10px;
     }
     .unlink{
-        font-size: 5rem;
+        font-size: 3rem;
         padding: 5px 100px;
         margin: 10px;
-    }
+    } */
     .text{
         font-size: 3rem;
     }

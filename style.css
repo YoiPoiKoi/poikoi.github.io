@@ -185,12 +185,13 @@ p {
     #banner{
         height: 300px;
     }
+}
 
 @media only screen and (min-height: 1081px){
     #profile{
         bottom: -200px;
-        width: 450px;
-        height: 450px;
+        width: 300px;
+        height: 300px;
     }
     #card {
         max-width: 100%;

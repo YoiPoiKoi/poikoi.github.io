@@ -57,7 +57,6 @@ p {
 
 #card {
     max-width: 30rem;
-    padding: 0 20px 40px;
     margin: 5px auto;
     border: 1px solid #cecece;
     box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
@@ -185,14 +184,14 @@ p {
     #banner{
         height: 300px;
     }
-    #profile{
-        bottom: -200px;
-        width: 450px;
-        height: 450px;
-    }
 }
 
-@media only screen and (min-height: 1081px){
+@media only screen and (min-height: 1080px){
+    #profile{
+        bottom: -200px;
+        width: 300px;
+        height: 300px;
+    }
     #card {
         max-width: 100%;
         padding: 0px 20px 40px;
@@ -201,7 +200,7 @@ p {
         background: white;
         border-radius: 10px;
         padding: 0 0 0px;
-        margin: 15px 5px;
+        margin: 15px 15px;
         position: relative;
     }
     #main_title{

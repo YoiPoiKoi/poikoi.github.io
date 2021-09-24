@@ -33,7 +33,7 @@ p {
     background-image: url('assets/img/banner.png'); 
     background-size: cover;
     background-position: 0 15%;
-    height: 150px;
+    height: 200px;
 }
 
 #profile{
@@ -41,8 +41,8 @@ p {
     left: 50%;
     transform: translate(-50%, 0);
     bottom: -73px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border: 3px solid white;
     display: block;
     margin: 35px auto 20px;
@@ -58,20 +58,19 @@ p {
 #card {
     max-width: 30rem;
     padding: 0 20px 40px;
-        margin: 0 auto;
-        border: 1px solid #cecece;
-        box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
-        background: white;
-        border-radius: 10px;
-        padding: 0 0 0px;
-        margin: 15px auto;
-        position: relative;
+    margin: 5px auto;
+    border: 1px solid #cecece;
+    box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
+    background: white;
+    border-radius: 10px;
+    padding: 0 0 0px;
+    position: relative;
 }
 
 #main_title_bar{
     width: -webkit-fill-available;
     background: var(--accentColor1);
-    height: 100px;
+    height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     left: 0;
@@ -116,7 +115,7 @@ p {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    padding: 5px; /* 17px */
+    padding: 5px;
     text-decoration: none;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
     -webkit-tap-highlight-color: transparent;
@@ -175,20 +174,54 @@ p {
     color: var(--accentColor1);
 }
 #footer {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
     font-family: var(--font1);
     color: var(--accentColor2);
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-height: 1081px){
     #banner{
-        height: 250px;
+        height: 520px;
     }
     #profile{
-        bottom: -90px;
-        width: 150px;
-        height: 150px;
+        bottom: -200px;
+        width: 450px;
+        height: 450px;
+    }
+    #card {
+        max-width: 100%;
+        padding: 0px 20px 40px;
+        border: 1px solid #cecece;
+        box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
+        background: white;
+        border-radius: 10px;
+        padding: 0 0 0px;
+        margin: 15px 5px;
+        position: relative;
+    }
+    #main_title{
+        margin-top: 150px;
+        font-size: 6rem;
+    }
+    .link{
+        font-size: 5rem;
+        padding: 5px 100px;
+        margin: 10px;
+    }
+    .unlink{
+        font-size: 5rem;
+        padding: 5px 100px;
+        margin: 10px;
+    }
+    .text{
+        font-size: 3rem;
+    }
+    .header{
+        font-size: 3rem;
+    }
+    #footer{
+        font-size: 3rem;
     }
 }

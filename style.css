@@ -4,27 +4,47 @@
     background-size: cover;
     background-position: 0 15%;
     height: 150px;
-    display: block; 
 }
 #profile{
-    position: relative;
-    top: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -73px;
     width: 150px;
     height: 150px;
-    border: 5px solid white;
-    margin: 0px auto 0px;
+    border: 3px solid white;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     background-image: url("assets/img/profile.png");
 }
-#card{
-    display: block;
-    position: center;
-    border: 5px solid red;
+#card {
+    max-width: 30rem;
+    padding: 0 20px 15px;
+    margin: 0 auto;
 }
 @media only screen and (min-width: 600px){
     #banner{
         height: 200px;
     }
+    #card {
+        padding: 0 20px 40px;
+        margin: 0 auto;
+        border: 1px solid #cecece;
+        box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
+        background: white;
+        border-radius: 10px;
+        padding: 0 20px 40px;
+        margin: 15px auto;
+        position: relative;
+    }
+    #profilePicture, #profilePicture img {
+        bottom: -90px;
+        z-index: 1;
+    }
+
 }

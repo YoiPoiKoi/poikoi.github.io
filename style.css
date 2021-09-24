@@ -1,32 +1,30 @@
-@font-face {
-    font-family: 'OpenSans';
-    src: url('assets/fonts/OpenSans-Regular.ttf');
-  }
-
-:root {
-    --accentColor: #fa8072;
-    --font: 'OpenSans', sans-serif;
-    --delay: .3s;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    margin: 0;
-}
-
 #banner{
+    position: relative;
     background-image: url('assets/img/banner4.png'); 
     background-size: cover;
     background-position: 0 15%;
-    height: 150px; 
+    height: 150px;
+    display: block; 
 }
-#profile img{
+#profile{
+    position: relative;
+    top: 120px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    margin: 0px auto 0px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
     background-image: url("assets/img/profile.png");
 }
-.header{
-
+#card{
+    display: block;
+    position: center;
+    border: 5px solid red;
+}
+@media only screen and (min-width: 600px){
+    #banner{
+        height: 200px;
+    }
 }

@@ -30,9 +30,9 @@ p {
 
 #banner{
     position: relative;
-    background-image: url('assets/img/banner2.png'); 
+    background-image: url('assets/img/banner3.png'); 
     background-size: cover;
-    background-position: 0 15%;
+    background-position: 0 30%;
     height: 150px;
 }
 

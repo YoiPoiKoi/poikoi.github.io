@@ -7,6 +7,31 @@
     <link rel="icon" href="assets/img/favicon.ico"/>
 </head>
 <body>
+    <div class="scrollHide" id="overlay">
+        <div id="darken" onclick="closeOverlay()">
+            <!-- overlay darken -->
+        </div>
+        <div id="overlayContainer">
+            <div id="main_title_bar">
+                <div id="overlayTitle">Test</div>
+            </div>
+            <div class="overlayContent" id="overlayContent1">
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+            <div class="overlayContent" id="overlayContent2">
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+            <div class="overlayContent" id="overlayContent3">
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+            <div class="overlayContent" id="overlayContent4">
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+            <div class="overlayContent" id="overlayContent5">
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+        </div>
+    </div>
 <section id="section">
     <div id="container">
         <div id="banner2">
@@ -23,13 +48,14 @@
             <div id="link_bar">
                 <div id="links">
                     <!-- <a class="link" href="https://www.instagram.com/poikoi_cosplay/" target="_blank">Instagram Cosplay <i class="fab fa-instagram"></i></a> -->
-                    <a class="link" href="https://yoipoikoi.github.io/" target="_self">Homepage</a>
-                    <a class="unlink" target="_blank">Minecraft</a>
-                    <a class="unlink" target="_blank">School</a>
-                    <a class="unlink" target="_blank">Projects</a>
-                    <a class="unlink" target="_blank">None</a>
-                    <a class="unlink" target="_blank">None</a>
-                    <a class="unlink" target="_blank">None</a>
+                    <a class="link" href="https://yoipoikoi.github.io/" target="_self"><i class="fas fa-backspace"></i> Homepage</a>
+                    <a class="link" onclick="openOverlay(1)" target="_blank"><i class="fa-solid fa-user"></i> About Me</a>
+                    <a class="link" onclick="openOverlay(2)" target="_blank"><i class="fa-solid fa-school-flag"></i> School</a>
+                    <a class="link" onclick="openOverlay(3)" target="_blank"><i class="fa-solid fa-building-columns"></i> University</a>
+                    <a class="link" onclick="openOverlay(4)" target="_blank"><i class="fas fa-sticky-note"></i> Misc Projects</a>
+                    <a class="link" onclick="openOverlay(5)" target="_blank"><i class="fa-solid fa-headphones"></i> Gaming</a>
+                    <!-- <a class="unlink" target="_blank">None</a> -->
+                    <!--<a class="unlink" target="_blank">None</a> -->
                 </div>
             </div>   
             <div id="header">
@@ -46,6 +72,7 @@
     </div>
 </section>
 <script src="https://kit.fontawesome.com/c275a1c8ce.js" crossorigin="anonymous"></script>
-<!script src="assets/js/slideshow.js"></!script>
+<script src="assets/js/slideshow.js"></script>
+<script src="assets/js/overlay.js"></script>
 </body>
 </html>

@@ -9,8 +9,9 @@
 
 :root {
     --accentColor1: #ff7777;
-   /*--accentColor2: #e6f2ff;*/ 
     --accentColor2: #fafafa;
+    --accentColor3: #b5b5b5;
+    /*--accentColor2: #e6f2ff;*/ 
     --font1: 'OpenSans-Regular';
     --font2: 'OpenSans-Bold';
     --delay: .3s;
@@ -23,6 +24,7 @@ body {
     backdrop-filter: blur(0.5px);
     background-color: var(--accentColor2);
     background-blend-mode: multiply;
+    overflow: hidden;
 }
 
 p {
@@ -109,6 +111,16 @@ p {
     text-transform: uppercase;
 }
 
+#overlayTitle{
+    margin-top: 53px;
+    font-family: var(--font2);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
 #link_bar{
     width: -webkit-fill-available;
     background: var(--accentColor2);
@@ -122,6 +134,7 @@ p {
 
 .link{
     font-family: var(--font1);
+    cursor: pointer;
     font-weight: bold;
     position: relative;
     background-color: #ffffff;
@@ -187,6 +200,12 @@ p {
     font-family: var(--font1);
     color: var(--accentColor1);
 }
+.text2{
+    text-align: center;
+    padding: 0px;
+    font-family: var(--font1);
+    color: var(--accentColor3);
+}
 .header{
     text-align: center;
     padding: 0px;
@@ -233,6 +252,10 @@ p {
         margin-top: 150px;
         font-size: 6rem;
     }
+    #overlayTitle{
+        margin-top: 150px;
+        font-size: 6rem;
+    }
     /*.link{
         font-size: 3rem;
         padding: 5px 100px;
@@ -252,4 +275,41 @@ p {
     #footer{
         font-size: 3rem;
     }
+}
+
+#overlay {
+    display: none/*none*/;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+  #darken {
+    position: fixed;
+    cursor: pointer;
+    background-color: black;
+    width: 100%;
+    height: 110%;
+    opacity: 0.5;
+  }
+
+#overlayContainer {
+    max-width: 1000px;
+    height: 1000px;
+    margin: 50px auto;
+    border: 1px solid #cecece;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+  }
+
+.overlayContent {
+    padding: 25px 0 0 0;
+    position: relative;
+}
+
+.scrollHide::-webkit-scrollbar {
+    display: none;
 }

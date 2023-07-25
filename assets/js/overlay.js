@@ -1,4 +1,5 @@
 function closeOverlay() {
+    document.getElementById('body').style.overflow = "auto";
     document.getElementById('overlay').style.display = "none";
     document.getElementById('overlayContent1').style.display = "none";
     document.getElementById('overlayContent2').style.display = "none";
@@ -8,7 +9,9 @@ function closeOverlay() {
 }
 
 function openOverlay(display) {
+    document.getElementById('body').style.overflow = "hidden";
     document.getElementById('overlay').style.display = "initial";
+    document.getElementById('overlay').scrollTop = 0;
     document.getElementById('overlayContent1').style.display = "none";
     document.getElementById('overlayContent2').style.display = "none";
     document.getElementById('overlayContent3').style.display = "none";

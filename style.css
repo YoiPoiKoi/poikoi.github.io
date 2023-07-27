@@ -194,6 +194,14 @@ a:hover{
     cursor: not-allowed;
 }
 
+#slideshow-description{
+    font-family: var(--font2);
+    color: white;
+    background-color: var(--accentColor1);
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
 @media (hover: hover) {
     .link:hover {
         background-color: var(--accentColor1);

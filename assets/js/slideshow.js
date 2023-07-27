@@ -10,12 +10,15 @@ function currentDiv(n, s) { //n = slide #, s = slideshow #
 function showDivs(n, s) {
   let i;
   let x = document.getElementsByClassName("slideshow-image"+s);
+  let d = document.getElementsByClassName("slideshow-description"+s);
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+    d[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+  d[slideIndex-1].style.display = "block";
   if (autoSlideCancel < 1) {autoSlideCancel++}
 }
 
@@ -24,15 +27,18 @@ function autoSlides() {
   if (autoSlideCancel > 0) {autoSlideCancel--}
 if (autoSlideCancel == 0) {
   let slides = document.getElementsByClassName("autoSlides");
-  let s = parseInt(slides[0].id.match(/\d+/g));
+  let s = parseInt(slides[0].className.match(/\d+/g));
   let x = document.getElementsByClassName("slideshow-image"+s);
+  let d = document.getElementsByClassName("slideshow-description"+s);
   let i;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+    d[i].style.display = "none";
   }
   autoSlideIndex1++;
   if (autoSlideIndex1 > x.length) {autoSlideIndex1 = 1}
   x[autoSlideIndex1-1].style.display = "block";
+  d[autoSlideIndex1-1].style.display = "block";
   //console.log(autoSlideIndex1);
 }
 }

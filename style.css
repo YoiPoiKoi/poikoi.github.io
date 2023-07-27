@@ -366,6 +366,29 @@ video {
     }
 }
 
+@media only screen and (max-width: 760px){
+    .biography-photo{
+        min-width:200px;
+        min-height:200px;
+        padding: 10px;
+    }
+
+    .biography-container {
+        display: inline-block;
+    }
+
+    .biography {
+        display: inline-block;
+        padding: 0px 20px 0px 20px;
+        text-align: center;
+    }
+
+    iframe {
+        width: 90%;
+        height: 30%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     #banner2{
         height: 90px;
@@ -419,10 +442,6 @@ video {
         text-align: center;
     }
 
-    iframe {
-        width: 45vh;
-        height: 30vh;
-    }
 
     .slideshow-content {
         width: 90vw;

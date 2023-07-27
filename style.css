@@ -387,6 +387,10 @@ video {
         width: 90%;
         height: 30%;
     }
+    
+    .break2 {
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 480px) {

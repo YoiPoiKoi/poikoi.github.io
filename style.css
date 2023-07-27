@@ -25,6 +25,7 @@ body {
     background-color: var(--accentColor2);
     background-blend-mode: multiply;
     overflow:auto;
+    overflow-x:hidden;
 }
 
 hr{

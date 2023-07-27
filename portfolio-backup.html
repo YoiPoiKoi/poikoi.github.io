@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="icon" href="assets/img/favicon.ico"/>
 </head>
-<body class="scrollHide" id="body">
+<body>
+    <section>
     <div id="overlay">
         <div id="darken" onclick="closeOverlay()">
             <!-- overlay darken -->
@@ -35,9 +36,7 @@
                         </p>
                     </div>
                 </div>
-                <!--<div style="display:inline-block;width:100vh">
-                    <iframe src="test.html" style="width:100%;border:none;background-color:#fff"></iframe>
-                </div>-->
+                <hr style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             </div>
             <div class="overlayContent" id="overlayContent2">
                 <p class="break" style="margin-top: 40px;"></p>
@@ -559,14 +558,10 @@
                 <p class="break" style="margin-top: 20px;"></p>
                 <p class="text2">
                     <b>Digital Art</b>
-                </p>
-                <p class="break" style="margin-top: 20px;"></p>
-                <div style="display:inline-block;max-height:500px;max-width:100%">
-                    <img class="centerImg" id="border2" src="assets/img/SelfPortrait.png" alt="invitiation" style="max-height:inherit;display:inline-block;">
-                <img class="centerImg" id="border2" src="assets/img/Creature.png" alt="invitiation" style="max-height:inherit;display:inline-block;">
-                </div>
-                <p class="break" style="margin-top: 20px;"></p>
-                <p class="text2">
+                    <img class="centerImg" id="border2" src="assets/img/SelfPortrait.png" alt="invitiation" style="width:100%;max-width:500px">
+                    <img class="centerImg" id="border2" src="assets/img/Creature.png" alt="invitiation" style="width:100%;max-width:500px">
+                    <br>
+                    <br>
                     <b>End</b>
                 </p>
             </div>
@@ -594,74 +589,74 @@
             </div>
         </div>
     </div>
-    <section id="section">
-        <div id="container">
-            <div id="banner2">
-                <div id="profile"></div>
-            </div> 
-        </div>
-    </section>
-    <section id="section">
-        <div id="container">
-            <div id="card2">
-                <div id="main_title_bar">
-                    <div id="main_title">PoiKoi</div>
+</section>
+<section id="section">
+    <div id="container">
+        <div id="banner2">
+            <div id="profile"></div>
+        </div> 
+    </div>
+</section>
+<section id="section">
+    <div id="container">
+        <div id="card2">
+            <div id="main_title_bar">
+                <div id="main_title">PoiKoi</div>
+            </div>
+            <div id="link_bar">
+                <div id="links">
+                    <!-- <a class="link" href="https://www.instagram.com/poikoi_cosplay/" target="_blank">Instagram Cosplay <i class="fab fa-instagram"></i></a> -->
+                    <a class="link" href="https://yoipoikoi.github.io/" target="_self"><i class="fas fa-backspace"></i> Homepage</a>
+                    <a class="link" onclick="openOverlay(1)" target="_blank"><i class="fa-solid fa-user"></i> About Me</a>
+                    <a class="link" onclick="openOverlay(2)" target="_blank"><i class="fa-solid fa-school-flag"></i> School</a>
+                    <a class="link" onclick="openOverlay(3)" target="_blank"><i class="fa-solid fa-building-columns"></i> University</a>
+                    <a class="link" onclick="openOverlay(4)" target="_blank"><i class="fas fa-sticky-note"></i> Misc Projects</a>
+                    <a class="link" onclick="openOverlay(5)" target="_blank"><i class="fa-solid fa-headphones"></i> Gaming</a>
+                    <!-- <a class="unlink" target="_blank">None</a> -->
+                    <!--<a class="unlink" target="_blank">None</a> -->
                 </div>
-                <div id="link_bar">
-                    <div id="links">
-                        <!-- <a class="link" href="https://www.instagram.com/poikoi_cosplay/" target="_blank">Instagram Cosplay <i class="fab fa-instagram"></i></a> -->
-                        <a class="link" href="https://yoipoikoi.github.io/" target="_self"><i class="fas fa-backspace"></i> Homepage</a>
-                        <a class="link" onclick="openOverlay(1)" target="_blank"><i class="fa-solid fa-user"></i> About Me</a>
-                        <a class="link" onclick="openOverlay(2)" target="_blank"><i class="fa-solid fa-school-flag"></i> School</a>
-                        <a class="link" onclick="openOverlay(3)" target="_blank"><i class="fa-solid fa-building-columns"></i> University</a>
-                        <a class="link" onclick="openOverlay(4)" target="_blank"><i class="fas fa-sticky-note"></i> Misc Projects</a>
-                        <a class="link" onclick="openOverlay(5)" target="_blank"><i class="fa-solid fa-headphones"></i> Gaming</a>
-                        <!-- <a class="unlink" target="_blank">None</a> -->
-                        <!--<a class="unlink" target="_blank">None</a> -->
+            </div>  
+            <p class="break" style="margin-top: 20px;"></p> 
+            <div id="header">
+                <p class="header">
+                    <b>Welcome to my portfolio page</b>
+                </p>
+                <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
+            </div>
+            <p class="break" style="margin-top: 80px;"></p>
+            <div id="overlayContainer">
+                    <div class="slideshow-content " style="max-width:600px; margin: 0 auto;">
+                        <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase1.jpg" style="width:100%;">
+                        <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase2.jpg" style="width:100%;display:none">
+                        <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase3.jpg" style="width:100%;display:none">
+                        <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase4.jpg" style="width:100%;display:none">
                     </div>
-                </div>  
-                <p class="break"></p> 
-                <div id="header">
-                    <p class="header">
-                        <b>Welcome to My Portfolio</b>
-                    </p>
-                    <p class="text2">Here you will find all my projects that range from hobbies to education endeavours!</p>
-                </div>
-                <p class="break2"></p>
-                <div id="overlayContainer">
-                        <div class="slideshow-content " style="max-width:600px; margin: 0 auto;">
-                            <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase1.jpg" style="width:100%;">
-                            <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase2.jpg" style="width:100%;display:none">
-                            <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase3.jpg" style="width:100%;display:none">
-                            <img id="slideshow-3" class="slideshow-image3 autoSlides w3-animate-left" src="assets/img/showcase4.jpg" style="width:100%;display:none">
-                        </div>
-                        <p class="break"></p>
-                        <div class="slideshow-container" >
-                            <div class="slideshow-icon-container" style="max-width:300px; margin: 0 auto;">
-                                <div class="slideshow-icon-content">
-                                    <img class="slideshow-icon" src="assets/img/showcase1.jpg" style="cursor:pointer" onclick="currentDiv(1,3)">
-                                </div>
-                                <div class="slideshow-icon-content">
-                                    <img class="slideshow-icon" src="assets/img/showcase2.jpg" style="cursor:pointer" onclick="currentDiv(2,3)">
-                                </div>
-                                <div class="slideshow-icon-content">
-                                    <img class="slideshow-icon" src="assets/img/showcase3.jpg" style="cursor:pointer" onclick="currentDiv(3,3)">
-                                </div>
-                                <div class="slideshow-icon-content">
-                                    <img class="slideshow-icon" src="assets/img/showcase4.jpg" style="cursor:pointer" onclick="currentDiv(4,3)">
-                                </div>
+                    <p class="break" style="margin-top: 10px;"></p>
+                    <div class="slideshow-container" >
+                        <div class="slideshow-icon-container" style="max-width:300px; margin: 0 auto;">
+                            <div class="slideshow-icon-content">
+                                <img class="slideshow-icon" src="assets/img/showcase1.jpg" style="cursor:pointer" onclick="currentDiv(1,3)">
                             </div>
-                    </div>
-                </div>
-                <p class="break2"></p>
-                <div id="footer">
-                    Work in progress
+                            <div class="slideshow-icon-content">
+                                <img class="slideshow-icon" src="assets/img/showcase2.jpg" style="cursor:pointer" onclick="currentDiv(2,3)">
+                            </div>
+                            <div class="slideshow-icon-content">
+                                <img class="slideshow-icon" src="assets/img/showcase3.jpg" style="cursor:pointer" onclick="currentDiv(3,3)">
+                            </div>
+                            <div class="slideshow-icon-content">
+                                <img class="slideshow-icon" src="assets/img/showcase4.jpg" style="cursor:pointer" onclick="currentDiv(4,3)">
+                            </div>
+                        </div>
                 </div>
             </div>
+            <div id="footer">
+                Work in progress
+            </div>
         </div>
-    </section>
-    <script src="https://kit.fontawesome.com/c275a1c8ce.js" crossorigin="anonymous"></script>
-    <script src="assets/js/slideshow.js"></script>
-    <script src="assets/js/overlay.js"></script>
+    </div>
+</section>
+<script src="https://kit.fontawesome.com/c275a1c8ce.js" crossorigin="anonymous"></script>
+<script src="assets/js/slideshow.js"></script>
+<script src="assets/js/overlay.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 let autoSlideIndex1 = 0;
-const timer = ms => new Promise(res => setTimeout(res, ms))
+let autoSlideCancel = 0;
+//const timer = ms => new Promise(res => setTimeout(res, ms))
 autoSlides()
 
 function currentDiv(n, s) { //n = slide #, s = slideshow #
@@ -15,10 +16,13 @@ function showDivs(n, s) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-
+  if (autoSlideCancel < 1) {autoSlideCancel++}
 }
 
 function autoSlides() {
+  setTimeout(autoSlides, 5000)
+  if (autoSlideCancel > 0) {autoSlideCancel--}
+if (autoSlideCancel == 0) {
   let slides = document.getElementsByClassName("autoSlides");
   let s = parseInt(slides[0].id.match(/\d+/g));
   let x = document.getElementsByClassName("slideshow-image"+s);
@@ -26,11 +30,9 @@ function autoSlides() {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-
-  
   autoSlideIndex1++;
   if (autoSlideIndex1 > x.length) {autoSlideIndex1 = 1}
   x[autoSlideIndex1-1].style.display = "block";
   //console.log(autoSlideIndex1);
-  setTimeout(autoSlides, 5000)
+}
 }

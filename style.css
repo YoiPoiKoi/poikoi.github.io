@@ -97,7 +97,7 @@ a:hover{
 
 #card2 {
     max-width: 98%;
-    min-height: 750px;
+    min-height: auto;
     margin: 5px auto;
     /*border: 1px solid #cecece;*/
     box-shadow: 10px 10px 0 rgb(220 220 220 / 50%);
@@ -232,11 +232,11 @@ a:hover{
     color: var(--accentColor1);
 }
 #footer {
-    margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
     font-family: var(--font1);
     color: var(--accentColor2);
+    padding-bottom: 20px;
 }
 
 .biography-container{
@@ -284,9 +284,10 @@ a:hover{
     display: none/*none*/;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 2;
     overflow: auto;
+    overflow-y: scroll;
 }
 
 #darken {
@@ -296,17 +297,19 @@ a:hover{
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    padding-bottom:8px;
   }
 
 #overlayContainer {
     max-width: 1000px;
     height: auto;
-    margin: 50px auto;
+    margin: 20px auto;
     /*border: 1px solid #cecece;*/
     background: white;
     border-radius: 10px;
     position: relative;
     text-align: center;
+    padding-bottom:8px;
   }
   
 video {
@@ -335,7 +338,15 @@ video {
     position: relative;
 }
 
-@media only screen and (min-width: 1081px){
+.break2{
+    margin-top: 80px;
+}
+
+.break{
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 1080px){
     #banner{
         height: 300px;
     }
@@ -344,20 +355,43 @@ video {
         width: 150px;
         height: 150px;
     }
+    .break2{
+        margin-top: 80px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     #overlay {   
     max-height: 80%;
     }
+    #banner2{
+        height: 90px;
+    }
 
     .overlayContent {
         padding: 0px 20px 0px 20px;
         position: relative;
     }
+    .break2{
+        margin-top: 20px;
+    }
+    .break{
+        margin-top: 10px;
+    }
+    .header{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .text2{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    #footer{
+        padding-bottom: 10px;
+    }
 }
 
-@media only screen and (min-height: 1000px){
+@media only screen and (min-height: 1000px){ /* 1920 x 1080*/
     #profile{
         bottom: -200px;
         width: 300px;
@@ -417,8 +451,22 @@ video {
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.overlayContent::-webkit-scrollbar {
-    display: block;
-}
+    width: 10px;
+    position: fixed;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--accentColor2);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accentColor3); 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accentColor1);
+  }

@@ -9,14 +9,15 @@ function closeOverlay() {
 }
 
 function openOverlay(display) {
+    //window.scrollTo(0,0);
     document.getElementById('body').style.overflow = "hidden";
     document.getElementById('overlay').style.display = "initial";
-    document.getElementById('overlay').scrollTop = 0;
     document.getElementById('overlayContent1').style.display = "none";
     document.getElementById('overlayContent2').style.display = "none";
     document.getElementById('overlayContent3').style.display = "none";
     document.getElementById('overlayContent4').style.display = "none";
     document.getElementById('overlayContent5').style.display = "none";
+    document.getElementById('overlay').style.paddingTop = document.getElementById('body').scrollTop;
     if (display == 1) {
         document.getElementById('overlayTitle').textContent = 'About Me';
         document.getElementById('overlayContent1').style.display = "block";

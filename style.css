@@ -232,11 +232,11 @@ a:hover{
     color: var(--accentColor1);
 }
 #footer {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: var(--font1);
     color: var(--accentColor2);
-    padding-bottom: 20px;
+    padding-bottom: 10px
 }
 
 .biography-container{
@@ -249,6 +249,8 @@ a:hover{
 }
 
 .biography-photo{
+    width: 100%;
+    max-width: 250px;
     padding:30px;
 }
 
@@ -309,7 +311,7 @@ a:hover{
     border-radius: 10px;
     position: relative;
     text-align: center;
-    padding-bottom:8px;
+    /*padding-bottom:8px;*/
   }
   
 video {
@@ -338,6 +340,10 @@ video {
     position: relative;
 }
 
+.art-content {
+    max-height: 500px;
+}
+
 .break2{
     margin-top: 80px;
 }
@@ -361,11 +367,13 @@ video {
 }
 
 @media only screen and (max-width: 480px) {
-    #overlay {   
-    max-height: 80%;
-    }
     #banner2{
         height: 90px;
+    }
+    #footer {
+        margin-bottom: 0px;
+        
+        padding-bottom: 5px
     }
 
     .overlayContent {
@@ -373,7 +381,7 @@ video {
         position: relative;
     }
     .break2{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .break{
         margin-top: 10px;
@@ -382,12 +390,46 @@ video {
         font-size: 1.5rem;
         padding: 5px;
     }
+    .biography-text{
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    b{
+        font-size: 1.2rem;
+    }
     .text2{
         font-size: 1rem;
         padding: 5px;
     }
-    #footer{
-        padding-bottom: 10px;
+
+    .biography-photo{
+        width:200px;
+        height:200px;
+        padding: 10px;
+    }
+
+    .biography-container {
+        display: inline-block;
+    }
+
+    .biography {
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+
+    iframe {
+        width: 45vh;
+        height: 30vh;
+    }
+
+    .slideshow-content {
+        width: 90vw;
+    }
+
+    .art-content {
+        max-height: 55vw;
     }
 }
 

@@ -49,6 +49,16 @@ a:hover{
     color:var(--accentColor1)
 }
 
+.a2{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--accentColor2)
+}
+
+.a2:hover{
+    color:var(--accentColor3)
+}
+
 #banner{
     position: relative;
     background-image: url('assets/img/banner.png'); 
@@ -199,6 +209,7 @@ a:hover{
     color: white;
     background-color: var(--accentColor1);
     padding: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 10px;
 }
 

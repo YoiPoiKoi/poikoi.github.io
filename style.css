@@ -117,6 +117,11 @@ a:hover{
     position: relative;
 }
 
+.logo {
+    margin: 20px 30px 20px 30px;
+    max-width: 150px;
+}
+
 #main_title_bar{
     width: -webkit-fill-available;
     background: var(--accentColor1);
@@ -421,6 +426,11 @@ video {
         margin-bottom: 0px;
         
         padding-bottom: 5px
+    }
+
+    .logo {
+        margin: 10px 10px 10px 10px;
+        max-width: 100px;
     }
 
     .overlayContent {

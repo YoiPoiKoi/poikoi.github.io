@@ -90,7 +90,7 @@ a:hover{
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    background-image: url("assets/img/LOGO.png");
+    background-image: url("assets/img/logo.png");
     z-index: 1
 }
 
